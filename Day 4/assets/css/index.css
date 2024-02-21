@@ -1,0 +1,112 @@
+@import "reset.css";
+@import "font.css";
+:root{
+    --primary-color : black;
+    --secondary-color:#6A6A6A;
+    --primary-bg-color: #FFF2F2;
+    --secondary-bg-color: #FFFFFF;
+}
+.container{
+    background-color: var(--primary-bg-color);
+    max-width: 100rem;
+    margin: 0 auto;
+}
+body{
+    background-color: var(--primary-bg-color);
+}
+/* End of Page */
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar > nav > ul{
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+    
+}
+.navbar > nav > ul > li > a{
+    text-decoration: none;
+    justify-content: space-between;
+    list-style: none;
+    color: var(--primary-color);
+    padding: 50px;
+    font-weight: bold;
+    font-family: 'Inter';
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: italic;
+}
+.container div{
+    text-align: center;
+}
+h3{
+    font-family: 'Inter';
+}
+.hero-section-container{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 50px;
+}
+.hero-section-container .left{
+    font-family: 'Inter';
+}
+.hero-section-container .left p{
+    color: #6A6A6A;
+}
+.hero-section-container .right{
+    width: 20rem;
+}
+.hero-section-container .right img{
+    border-radius: 50%;
+}
+.top-features-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top-features-container > .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+}
+.top-features-container >.grid{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+}
+.top-features-container > .grid > .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+    width: 18vw;
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
+    box-shadow: 5px 12px 32px -15px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 12px 32px -15px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 12px 32px -15px rgba(0,0,0,1);
+}
+.top-features-container > .grid > .item > p{
+    font-size: 12px;
+    font-family: 'Inter';
+}
+.top-features-container > .grid > .item > h2{
+    font-size: 1.2rem;
+    font-family: 'Inter';
+}
+
+

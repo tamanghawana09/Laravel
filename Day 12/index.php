@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="add.html" method="post">
+    <form action="add.php" method="post">
         <button type="submit">Add</button><br>
     </form>
     <ul>
@@ -21,7 +21,7 @@
             $rows = mysqli_fetch_all($result,MYSQLI_ASSOC);
                 foreach($rows as $value){
                     echo "<li>{$value['id']} , {$value['first_name']} ,{$value['middle_name']} , {$value['last_name']} , {$value['phone_number']} ,  {$value['email']}</li>";
-                    echo "<form action='update.html' method='post'>";
+                    echo "<form action='update.php' method='post'>";
                     echo "<button type='submit'>Edit</button>";
                     echo "</form>";
                     echo "<form action='delete_contact.php' method='post'>";

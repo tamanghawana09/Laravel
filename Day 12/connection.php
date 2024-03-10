@@ -14,7 +14,7 @@
     $null_result = $conn->query($null_sql);
 
     if($null_result && $null_result->num_rows>0){
-        $null_rowCount = $row['count'];
+        $null_rowCount = $null_result->fetch_assoc()['count'];
         if ($null_rowCount == 0) {
             $set_query = "ALTER TABLE contacts AUTO_INCREMENT = 1";
             mysqli_query($conn,$set_query);

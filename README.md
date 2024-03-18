@@ -4,9 +4,9 @@
 <p> Laravel strives to provide an amazing developer experiences while providing powerful features such as thorough dependency injection, an expressive database abstraction layer, queues and scheduled jobs, unit and integration testing, and more. </p>
 
 <h2>Why Laravel ?</h2>
-* A Progressive Framework
-* A Scalable Framework
-* A Community Framework
+* A Progressive Framework <br>
+* A Scalable Framework <br>
+* A Community Framework <br>
 
 <hr>
 <h2> Creating a Laravel Project </h2>
@@ -31,7 +31,7 @@ cd example-app
 
 php artisan serve
 ```
-<p>Now, the Artisan development server is started the application will be accessible in your browser at <a>http://localhost:8000</a> 🚀.
+<p>Now, the Artisan development server is started the application will be accessible in your browser at <a href="http://localhost:8000">http://localhost:8000</a> 🚀.
 
 <hr>
 <h3>Code with peace ✌️</h3>

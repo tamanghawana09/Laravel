@@ -15,18 +15,19 @@
         <section class="container mt-4">
             <div class="card">
                 <div class="card-body">
-                    <form action="/edit"  method="POST">
+                    <form action="/update/{{$data['id']}}"  method="POST">
+                    @csrf
                     <div class="mb-3">
                         <label for="expenses" class="form-label">Expenses Title:</label>
-                        <input type="text" class="form-control" id="title" >
+                        <input type="text" class="form-control" id="title" name="title" value="{{$data['title']}}">
                     </div>
                     <div class="mb-3">
                         <label for="amount" class="form-label">Amount:</label>
-                        <input type="text" class="form-control" id="amount">
+                        <input type="text" class="form-control" id="amount" name="amount" value="{{$data['amount']}}">
                     </div>
                     <div class="mb-3">
                         <label for="category" class="form-label">Category:</label>
-                        <input type="text" class="form-control" id="category">
+                        <input type="text" class="form-control" id="category" name="category" value="{{$data['category']}}">
                     </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

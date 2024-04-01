@@ -11,23 +11,31 @@
         <header class="bg-dark text-white py-4 text-center">
             <h1>Expenses Tracker</h1>
         </header>
-
+        <div>
+            <a class="btn btn-primary" href="/create">Create New expenses</a>
+        </div>
         <section class="container mt-4">
             <table class="table table-bordered">
                 <tr>
+                    <th scope="col">#Id</th>
                     <th scope="col">Title</th>
                     <th scope="col">Amount</th>
                     <th scope="col">Category</th>
                     <th scope="col">Edit</th>
                     <th scope="col">Delete</th>
                 </tr>
+                 @foreach($expenses as $value)
+
                 <tr>
-                    <td>Test</td>
-                    <td>300</td>
-                    <td>food</td>
-                    <td><button class="btn btn-info">Edit</button></td>
-                    <td><button class="btn btn-danger">Delete</button></td>
+                <th scope="row">{{$value['id']}}</th>
+                <td>{{$value['title']}}</td>
+                <td>{{$value['amount']}}</td>
+                <td>{{$value['category']}}</td>
+                <td><a href="/edit/{{$value['id']}}" class="btn btn-info">Edit</a></td>
+                <td><a href="/delete/{{$value['id']}}" class="btn btn-danger">Delete</a></td>
                 </tr>
+
+                @endforeach 
             </table>
         </section>
     </main>
